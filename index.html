@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A Agência de Viagens encontra o hotel certo para você!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+                <img src="./Imagens/local-logo.png" alt="logo maps colorido">
+            </div>
+            <p>Agência de Viagens</p>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div>
+                <img src="./Imagens/aviao.png" alt="ícone de avião">
+            </div>
+            <p>Solicite um orçamento</p>
+        </div>
+        <h2>Informe seus dados</h2>
+        <form action="">
+            <label>Nome</label>
+            <input type="text" placeholder="Nome completo" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Email para contato" required>
+
+            <label>Celular</label>
+            <input type="tel" placeholder="(xx) xxxxx-xxxx" required>
+
+            <div>
+                <label>Data da Ida</label>
+                <input type="date" required>
+            
+                <label>Data da Volta</label>
+                <input type="date" required>
+            </div>
+            <div>
+                <div>
+                    <p>Origem:</p>
+                    <select name="origem" required>
+                        <option value="">Partindo de</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                                <div>
+                    <p>Destino:</p>
+                    <select name="destino" required>
+                        <option value="">Indo para:</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>        
+            </div>
+            <div>
+                <p>Quarto com cama infantil?</p>
+                <div>
+                    <input type="radio" name="quarto-infantil" id="infantil-sim" value="sim" required>
+                    <label for="infantil-sim">Sim</label>
+                </div>
+                <div>
+                    <input type="radio" name="quarto-infantil" id="infantil-nao" value="nao">
+                    <label for="infantil-nao">Não</label>
+                </div>
+            </div>
+            <div>
+                <p>Preferências da hospedagem</p>
+                <div>
+                    <div>
+                        <input type="checkbox" id="chek-preferencias[]" name="preferencias" value="piscina">
+                        <label for="chek-preferencias">Piscina</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="chek-preferencias[]" name="preferencias" value="wifi">
+                        <label for="chek-preferencias">Wi-Fi</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="chek-preferencias[]" name="preferencias" value="garagem">
+                        <label for="chek-preferencias">Garagem</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="chek-preferencias[]" name="preferencias" value="suite">
+                        <label for="chek-preferencias">Suite</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Solicitar Orçamento</button>
+        </form>
+    </main>
+    <section></section>
+    <footer></footer>
+</body>
+</html>
