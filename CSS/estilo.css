@@ -114,7 +114,6 @@ select {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
 }
 
 .selecao {
@@ -128,7 +127,6 @@ select {
 .agrupamento-id {
     display: flex;
     align-items: center;
-
     width: 120px;
 }
 
@@ -216,4 +214,152 @@ figcaption {
     color: #fff;
     padding: 5px 10px;
     box-sizing: border-box;
+}
+
+/*  */
+.agrupamento-anuncio {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.agrupamento-anuncio figure {
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.agrupamento-anuncio figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ .legenda-anuncio {
+    width: 100%;
+    background-color: #fff;
+}
+
+.legenda-anuncio h4 {
+    font-size: 16px;    
+}
+
+.legenda-anuncio p {
+    color: gray;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #5d15d1;
+    margin-top: 32px;
+}
+
+.agrupamento-rodape {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.container-info-rodape {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.container-info-rodape h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.info-rodape {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.info-rodape img {
+    width: 18px;
+}
+
+.info-rodape span {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* responsivo */
+@media (max-width: 1100px){
+    .tamanho-limite {
+        width: 90%;
+    }
+}
+
+@media (max-Width: 768px){
+    button {
+        width: 100%;
+    }
+
+    .grupo-geral-imagens {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .grupo-geral-imagens figure {
+        width: 100%;
+        height: 225px;
+        margin: 15px auto;
+    }
+
+    .grupo-imagens-menores {
+        width: 100%;
+    }
+
+    .grupo-imagens-mencores figure {
+        width: 100%;
+        height: 225px;
+    }
+
+    .agrupamento-anuncio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .agrupamento-anuncio figure {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .legenda-anuncio {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .agrupamento-rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-rodape {
+        width: 250px;
+    }
+}
+
+@media (max-width: 540px){
+    .agrupamento-select {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .selecao, .agrupamento-id {
+        width: 100%;
+    }
 }
